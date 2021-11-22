@@ -1,0 +1,11 @@
+".app.title" = "Note Berechnen";
+"Mark" = "Note";
+"Points" = "Punkte";
+"Number of Points" = "Punktzahl";
+"Total" = "Gesamt";
+"Actual" = "Erreicht";
+"Information" = "Information";
+".formula.info" = "Die Note wird nach der Formel\n\n6 - 5 × erreichte Punkte ÷ Gesamtpunktzahl\n\n berechnet.";
+".invalid.total.points" = "Die Gesamtpunktzahl ist ungültig";
+".invalid.reached.points" = "Die erreichte Punktzahl ist ungültig";
+".invalid.reached.greater.than.total" = "Die erreichte Punktzahl ist größer als die Gesamtpunktzahl";

@@ -1,0 +1,38 @@
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# API keys and secrets
+.env
+
+# Xcode user settings
+xcuserdata/
+
+## App packaging
+Packaging.log
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build
+
+# Swift metadata
+*.hmap
+
+# VS Code
+.history/
+*.code-workspace
+
+# IntelliJ and Eclipse
+.idea
+*.iml
+.project
+
+# OS metadata
+.DS_Store
+AppleDouble
+.LSOverride
+Thumbs.db
+[Dd]esktop.ini

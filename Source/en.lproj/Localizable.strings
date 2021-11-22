@@ -1,0 +1,5 @@
+".app.title" = "Calculate Mark";
+".formula.info" = "Marks are calculated according to the formula\n\n6 - 5 × actual points ÷ total points.";
+".invalid.total.points" = "Number of total points not valid";
+".invalid.reached.points" = "Number of actual points not valid";
+".invalid.reached.greater.than.total" = "Actual points is larger than total points";
