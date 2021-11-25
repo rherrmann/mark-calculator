@@ -1,4 +1,5 @@
 # ![](/Source/Assets.xcassets/AppIcon.appiconset/29.png) Mark Calculator
+![](https://github.com/rherrmann/class-tools/actions/workflows/build.yaml/badge.svg?branch=main)
 
 A simple iOS app to convert from a given actual and total number of points to a mark.
 
