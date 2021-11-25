@@ -56,9 +56,9 @@ class ViewModelTests: XCTestCase {
   }
   
   func testMark_isRoundedToOneDecimal() throws {
-    let viewModel = CalculatorViewModel(totalPoints: "55", reachedPoints: "16")
+    let viewModel = CalculatorViewModel(totalPoints: "55", reachedPoints: "17")
     
-    XCTAssertEqual(4.6, viewModel.mark)
+    XCTAssertEqual(4.5, viewModel.mark)
     XCTAssertEqual(nil, viewModel.notification)
   }
   

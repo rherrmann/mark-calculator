@@ -78,7 +78,7 @@ struct CalculatorViewModel {
       notify(".invalid.reached.greater.than.total")
       return
     }
-    let m = Float(6.0 - (5.0 * Float(reachedPoints) / Float(totalPoints)))
+    let m = 6.0 - (5.0 * reachedPoints / totalPoints)
     mark = round(m * 10.0) / 10.0
     notification = nil
   }

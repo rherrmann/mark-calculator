@@ -19,6 +19,7 @@
 		073973C2274BB3B200C86B25 /* Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 073973C1274BB3B200C86B25 /* Screenshot.png */; };
 		073973C5274E78E100C86B25 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 073973C7274E78E100C86B25 /* Localizable.strings */; };
 		073973CB274F032A00C86B25 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 073973CA274F032A00C86B25 /* .gitignore */; };
+		073973D2275033CE00C86B25 /* appstore.png in Resources */ = {isa = PBXBuildFile; fileRef = 073973D1275033CE00C86B25 /* appstore.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		073973C9274E7D1900C86B25 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		073973CA274F032A00C86B25 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		073973D02750223300C86B25 /* CI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CI.xctestplan; sourceTree = "<group>"; };
+		073973D1275033CE00C86B25 /* appstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appstore.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				073973BE274B20CF00C86B25 /* README.md */,
 				073973BF274B216C00C86B25 /* LICENSE */,
 				073973D02750223300C86B25 /* CI.xctestplan */,
+				073973D1275033CE00C86B25 /* appstore.png */,
 				073973C1274BB3B200C86B25 /* Screenshot.png */,
 				073973CA274F032A00C86B25 /* .gitignore */,
 				0739738C274AACEF00C86B25 /* Products */,
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				073973CB274F032A00C86B25 /* .gitignore in Resources */,
+				073973D2275033CE00C86B25 /* appstore.png in Resources */,
 				073973C0274B216C00C86B25 /* LICENSE in Resources */,
 				073973C5274E78E100C86B25 /* Localizable.strings in Resources */,
 				07397393274AACF100C86B25 /* Assets.xcassets in Resources */,
