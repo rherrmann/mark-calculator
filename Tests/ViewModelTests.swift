@@ -142,6 +142,16 @@ class ViewModelTests: XCTestCase {
     XCTAssertEqual("", viewModel.totalPointsString)
   }
   
+  func testStepTotalPoints_invalidPlusOne() {
+    var viewModel = CalculatorViewModel(totalPoints: "bad", reachedPoints: "1")
+    
+    viewModel.stepTotalPoints(1)
+    
+    XCTAssertEqual(0, viewModel.mark)
+    XCTAssertEqual(nil, viewModel.totalPoints)
+    XCTAssertEqual("bad", viewModel.totalPointsString)
+  }
+  
   func testStepReachedPoints_emptyPlusOne() {
     var viewModel = CalculatorViewModel(totalPoints: "", reachedPoints: "")
     

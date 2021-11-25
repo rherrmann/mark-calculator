@@ -12,7 +12,7 @@ jobs:
         run: sudo xcode-select -switch /Applications/Xcode_13.1.app
       - name: Build and Test
         run: |
-          xcodebuild -scheme Class\ Tools -destination platform=iOS\ Simulator,OS=15.0,name=iPhone\ 11 \
+          xcodebuild -scheme Class\ Tools -destination platform=iOS\ Simulator,OS=15.0,name=iPhone\ 11 -testPlan CI \
           clean test \
           | xcpretty \
           && exit ${PIPESTATUS[0]}
