@@ -6,20 +6,15 @@
 # API keys and secrets
 .env
 
-# Xcode user settings
+# Xcode and swift build tools
 xcuserdata/
-
-## App packaging
+build/
+.build
 Packaging.log
+*.hmap
 *.ipa
 *.dSYM.zip
 *.dSYM
-
-# Swift Package Manager
-.build
-
-# Swift metadata
-*.hmap
 
 # VS Code
 .history/

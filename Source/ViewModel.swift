@@ -38,17 +38,17 @@ struct CalculatorViewModel {
   
   mutating func stepTotalPoints(_ stepWidth: Float) {
     if let totalPoints = totalPoints, totalPoints + stepWidth >= 0 {
-      totalPointsString = totalPoints + stepWidth == 0 ? "" : String(totalPoints + stepWidth)
+      totalPointsString = totalPoints + stepWidth == 0 ? "" : Self.toString(totalPoints + stepWidth)
     } else if totalPointsString.trimmingCharacters(in: .whitespaces).isEmpty && stepWidth > 0 {
-      totalPointsString = String(format: "%0.1f", 1.0)
+      totalPointsString = Self.toString(1.0)
     }
   }
   
   mutating func stepReachedPoints(_ stepWidth: Float) {
     if reachedPointsString.trimmingCharacters(in: .whitespaces).isEmpty && stepWidth > 0 {
-      reachedPointsString = String(format: "%0.1f", 0.0)
+      reachedPointsString = Self.toString(0.0)
     } else if let reachedPoints = reachedPoints, reachedPoints + stepWidth >= 0 {
-      reachedPointsString = String(reachedPoints + stepWidth)
+      reachedPointsString = Self.toString(reachedPoints + stepWidth)
     }
   }
   
@@ -79,7 +79,7 @@ struct CalculatorViewModel {
       return
     }
     let m = Float(6.0 - (5.0 * Float(reachedPoints) / Float(totalPoints)))
-    mark = round(m * 100.0) / 100.0
+    mark = round(m * 10.0) / 10.0
     notification = nil
   }
   
@@ -94,5 +94,10 @@ struct CalculatorViewModel {
     let number = numberFormatter.number(from: string.trimmingCharacters(in: .whitespaces))
     return number?.floatValue
   }
+
+  private static func toString(_ float: Float) -> String {
+    String(format: "%0.1f", locale: Locale.current, arguments: [float])
+  }
+  
 }
 

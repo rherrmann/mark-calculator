@@ -1,0 +1,39 @@
+{
+  "configurations" : [
+    {
+      "id" : "1DCBDA5B-FD2F-4F76-896F-AC75B6A1181E",
+      "name" : "System Locale",
+      "options" : {
+
+      }
+    },
+    {
+      "id" : "E6F1466F-C758-4541-8C59-6061B5A41C7A",
+      "name" : "German Locale",
+      "options" : {
+        "language" : "de"
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testExecutionOrdering" : "random",
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Mark Calculator.xcodeproj",
+        "identifier" : "0739739A274AACF100C86B25",
+        "name" : "Mark CalculatorTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Mark Calculator.xcodeproj",
+        "identifier" : "073973A4274AACF100C86B25",
+        "name" : "Mark CalculatorUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

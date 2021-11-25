@@ -55,6 +55,13 @@ class ViewModelTests: XCTestCase {
     XCTAssertEqual(nil, viewModel.notification)
   }
   
+  func testMark_isRoundedToOneDecimal() throws {
+    let viewModel = CalculatorViewModel(totalPoints: "55", reachedPoints: "16")
+    
+    XCTAssertEqual(4.6, viewModel.mark)
+    XCTAssertEqual(nil, viewModel.notification)
+  }
+  
   func testMark_increasingReachedPoints() throws {
     var viewModel = CalculatorViewModel(totalPoints: "10", reachedPoints: "0")
     
@@ -114,7 +121,7 @@ class ViewModelTests: XCTestCase {
     viewModel.stepTotalPoints(1)
     
     XCTAssertEqual(1, viewModel.totalPoints)
-    XCTAssertEqual("1.0", viewModel.totalPointsString)
+    XCTAssertEqual(decimal(1, 0), viewModel.totalPointsString)
   }
   
   func testStepTotalPoints_emptyMinusOne() {
@@ -141,7 +148,7 @@ class ViewModelTests: XCTestCase {
     viewModel.stepReachedPoints(1)
     
     XCTAssertEqual(0, viewModel.reachedPoints)
-    XCTAssertEqual("0.0", viewModel.reachedPointsString)
+    XCTAssertEqual(decimal(0, 0), viewModel.reachedPointsString)
   }
   
   func testStepReachedPoints_emptyMinusOne() {
@@ -159,16 +166,20 @@ class ViewModelTests: XCTestCase {
     viewModel.stepReachedPoints(-1)
     
     XCTAssertEqual(0, viewModel.reachedPoints)
-    XCTAssertEqual("0.0", viewModel.reachedPointsString)
+    XCTAssertEqual(decimal(0, 0), viewModel.reachedPointsString)
   }
   
   func testStepReachedPoints_zeroMinusOne() {
-    var viewModel = CalculatorViewModel(totalPoints: "", reachedPoints: "0.0")
+    var viewModel = CalculatorViewModel(totalPoints: "", reachedPoints: decimal(0, 0))
     
     viewModel.stepReachedPoints(-1)
     
     XCTAssertEqual(0, viewModel.reachedPoints)
-    XCTAssertEqual("0.0", viewModel.reachedPointsString)
+    XCTAssertEqual(decimal(0, 0), viewModel.reachedPointsString)
+  }
+  
+  func decimal(_ preDecimal: Int, _ postDecimal: Int) -> String {
+    "\(preDecimal)\(Locale.current.decimalSeparator ?? "decimal-separator")\(postDecimal)"
   }
   
 }

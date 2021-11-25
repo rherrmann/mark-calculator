@@ -56,6 +56,7 @@
 		073973C8274E797B00C86B25 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		073973C9274E7D1900C86B25 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		073973CA274F032A00C86B25 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		073973D02750223300C86B25 /* CI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CI.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +92,7 @@
 				073973A8274AACF100C86B25 /* UITests */,
 				073973BE274B20CF00C86B25 /* README.md */,
 				073973BF274B216C00C86B25 /* LICENSE */,
+				073973D02750223300C86B25 /* CI.xctestplan */,
 				073973C1274BB3B200C86B25 /* Screenshot.png */,
 				073973CA274F032A00C86B25 /* .gitignore */,
 				0739738C274AACEF00C86B25 /* Products */,
