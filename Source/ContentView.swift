@@ -91,7 +91,7 @@ struct ContentView: View {
   @ViewBuilder
   private func markGroupBox() -> some View {
     GroupBox(label: markGroupHeader()) {
-      Text("\(model.mark == 0 ? " " : String(format: "%0.1f", locale: Locale.current, arguments: [model.mark]))")
+      Text("\(model.markString)")
         .accessibilityIdentifier("markText")
         .font(.largeTitle).padding()
     }

@@ -26,6 +26,10 @@ struct CalculatorViewModel {
   var notification: LocalizedStringKey? = nil
   var mark: Float = 0
   
+  var markString: String {
+    mark == 0 ? " " : Self.toString(mark)
+  }
+  
   init() {
     self.init(totalPoints: "", reachedPoints: "")
   }
