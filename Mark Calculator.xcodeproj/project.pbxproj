@@ -15,11 +15,7 @@
 		073973B9274AF2F100C86B25 /* SnapshotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073973B8274AF2F100C86B25 /* SnapshotModel.swift */; };
 		073973BB274AF45600C86B25 /* AlertHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073973BA274AF45600C86B25 /* AlertHandler.swift */; };
 		073973BD274AF51100C86B25 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073973BC274AF51100C86B25 /* ViewModel.swift */; };
-		073973C0274B216C00C86B25 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 073973BF274B216C00C86B25 /* LICENSE */; };
-		073973C2274BB3B200C86B25 /* Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 073973C1274BB3B200C86B25 /* Screenshot.png */; };
 		073973C5274E78E100C86B25 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 073973C7274E78E100C86B25 /* Localizable.strings */; };
-		073973CB274F032A00C86B25 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 073973CA274F032A00C86B25 /* .gitignore */; };
-		073973D2275033CE00C86B25 /* appstore.png in Resources */ = {isa = PBXBuildFile; fileRef = 073973D1275033CE00C86B25 /* appstore.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -249,12 +245,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				073973CB274F032A00C86B25 /* .gitignore in Resources */,
-				073973D2275033CE00C86B25 /* appstore.png in Resources */,
-				073973C0274B216C00C86B25 /* LICENSE in Resources */,
 				073973C5274E78E100C86B25 /* Localizable.strings in Resources */,
 				07397393274AACF100C86B25 /* Assets.xcassets in Resources */,
-				073973C2274BB3B200C86B25 /* Screenshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
